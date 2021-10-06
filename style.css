@@ -7,10 +7,25 @@
  }
 
 
-   list-style: none;
-   text-align: right;
-   margin-right: 20px;
-   margin-top: -20px;
+ .titre{
+     color: #fde035;
+     font-style: italic;
+    font-size: 110px;
+    text-align: center;
+ }
+
+
+ * {
+    box-sizing: border-box;
+    padding:0;
+
+}
+
+body, h2, p, ul, li {
+    margin:0;
+    padding:0;
+    }
+
 
 }
 .logo{

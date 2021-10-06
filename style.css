@@ -120,6 +120,9 @@ td, th {
     width: 60px;
  }
 
- 
+ .patisserie{
+     display: grid;
+    
+ }
 
 

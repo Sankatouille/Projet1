@@ -7,10 +7,25 @@
  }
 
 
-   list-style: none;
-   text-align: right;
-   margin-right: 20px;
-   margin-top: -20px;
+ .titre{
+     color: #fde035;
+     font-style: italic;
+    font-size: 110px;
+    text-align: center;
+ }
+
+
+ * {
+    box-sizing: border-box;
+    padding:0;
+
+}
+
+body, h2, p, ul, li {
+    margin:0;
+    padding:0;
+    }
+
 
 }
 .logo{
@@ -77,7 +92,26 @@ section{
  body{
      background-color:var(--lighty);
      padding : 0;
+     text-align : center;
  }
+
+/**Tableau indiquant le jour ainsi que l'adresse du food truck */
+
+
+table {
+    border-collapse: collapse; /* Les bordures du tableau seront collées */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    caption-side: top;
+}
+
+td, th {
+    border: 1px solid black;
+    width : 100px;
+}
+
 
  .facebook , .insta{
      

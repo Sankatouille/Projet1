@@ -1,5 +1,9 @@
+
 :root {
     --main-color:#1a2b44;
+    --secondary-color:#a77252;
+    --darky: black;
+    --lighty: #fff;
  }
 
  .titre{
@@ -8,62 +12,74 @@
     font-size: 110px;
     text-align: center;
  }
+
  * {
     box-sizing: border-box;
     padding:0;
+    margin: 0;
+   
+ }
+ header {
+     display: flex;
+     width: 100%;
+     height: 100px;
+ }
 
-}
 
-body, h2, p, ul, li {
-    margin:0;
-    padding:0;
-    }
-
-.imglogo{
-    display:flex;
-    justify-content: left;
+ .titre{
+     display: flex;
+     color: #fde035;
+    font-size:clamp(20px, 12vw, 200px);
     text-align: center;
-    height: 100px;  
-}
+    
+ }
 
-@media only screen and (max-width: 480px) {
-    .imgfoodtruck {
-      width: 100%;
-      height: 400px;
-    }
-}
 
 nav{ 
+    position: fixed;
     list-style-type: none;
    /* width: 100%;
      height: 100px;*/
     background-color: var(--main-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding : 10px;
-    color : white; 
-    /**margin:0; */
+
+
+    justify-content: space-between; 
+    color:lighty;
+  
 }   
     
-    
+.imglogo{
+    margin: left 20px; 
+    color: #a77252;
+    width: 100px;
+    height: 100px;
+ }
    
 ul{
     list-style-type: none;
     display: flex;
     gap : 10px;
+    flex-direction: column;
+    
+    
 } 
+li{
+    font-size:clamp( 3px, 4px, 7px);
+}
 
 a {
-    color : #DDD;
+    color :var(--lighty);
     text-decoration: none;
     font-size: 20px;
-    
+
 }
 
-a:hover {
-    text-decoration: underline;
+section{
+    color:#1a2b44 ;
 }
+
 
 
  
@@ -86,9 +102,60 @@ a:hover {
      color: var(--main-color);
  }
  body{
-     background-color:white;
+     background-color: #8cb191;
      padding : 0;
+     text-align : center;
+     background-color: #8cb191;
  }
+
+
+ .contactform{
+    border : inset 1px --darky;
+    background-color :var(--main-color);
+    color :var(--lighty);
+    display: flex;
+    width: 40%;
+    text-align : right;
+    padding-right : 5px;
+ }
+
+
+/**Tableau indiquant le jour ainsi que l'adresse du food truck */
+
+
+table {
+    border-collapse: collapse; /* Les bordures du tableau seront collées */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    caption-side: top;
+}
+
+td, th {
+    border: 1px solid black;
+    width : clamp(60px, 10vw, 100px);
+}
+
+/**logo des réseaux du truck*/
+
+
+
+ .patisseries{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12,100px);
+    gap: 10px;
+ }
+.patisserie{
+    height: 100px;
+    width: 100px;
+    
+}
+footer{
+    display: flex;
+    
+}
 
  .facebook , .insta{
      
@@ -96,7 +163,3 @@ a:hover {
     height: 60px;
     width: 60px;
  }
-
- 
-
- 

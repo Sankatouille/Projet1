@@ -38,8 +38,8 @@ body, h2, p, ul, li {
 
 nav{ 
     list-style-type: none;
-    /**width: 100%;
-    /**height: 100px;*/
+    width: 100%;
+    height: 100px;
     background-color: var(--main-color);
     display: flex;
     align-items: center;
@@ -93,6 +93,7 @@ section{
      background-color:var(--lighty);
      padding : 0;
      text-align : center;
+     background-color: #8cb191;
  }
 
 /**Tableau indiquant le jour ainsi que l'adresse du food truck */
@@ -109,9 +110,10 @@ table {
 
 td, th {
     border: 1px solid black;
-    width : 100px;
+    width : clamp(60px, 10vw, 100px);
 }
 
+/**logo des réseaux du truck*/
 
  .facebook , .insta{
      

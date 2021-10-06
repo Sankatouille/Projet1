@@ -2,13 +2,21 @@
     --main-color:#1a2b44;
  }
 
+ .titre{
+     color: #fde035;
+     font-style: italic;
+    font-size: 120px;
+    text-align: center;
+ }
+
+ 
  * {
     box-sizing: border-box;
     padding:0;
 
 }
 
-body, h1, h2, p, ul, li {
+body, h2, p, ul, li {
     margin:0;
     padding:0;
     }

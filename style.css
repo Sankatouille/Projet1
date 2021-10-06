@@ -6,24 +6,27 @@
     --lighty: #fff;
  }
 
- .titre{
-     color: #fde035;
-     font-style: italic;
-    font-size: 110px;
-    text-align: center;
+     
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+
+.imglogo{
+    margin: left 20px; 
+    color: #a77252;
+    width: 100px;
+    height: 100px;
  }
 
- * {
+
+* {
     box-sizing: border-box;
     padding:0;
     margin: 0;
-   
- }
- header {
-     display: flex;
-     width: 100%;
-     height: 100px;
- }
+   }
 
 
  .titre{
@@ -31,6 +34,7 @@
      color: #fde035;
     font-size:clamp(20px, 12vw, 200px);
     text-align: center;
+    font-style:italic;
     
  }
 
@@ -43,33 +47,27 @@ nav{
     background-color: var(--main-color);
     display: flex;
     align-items: center;
-
-
     justify-content: space-between; 
     color:lighty;
   
 }   
-    
-.imglogo{
-    margin: left 20px; 
-    color: #a77252;
-    width: 100px;
-    height: 100px;
- }
+
    
-ul{
+nav > ul{
     list-style-type: none;
     display: flex;
     gap : 10px;
     flex-direction: column;
+    }
     
     
-} 
-li{
+nav li{
     font-size:clamp( 3px, 4px, 7px);
 }
 
-a {
+
+
+a{
     color :var(--lighty);
     text-decoration: none;
     font-size: 20px;
@@ -77,7 +75,8 @@ a {
 }
 
 section{
-    color:#1a2b44 ;
+    color:#1a2b44;
+    color:var(--main-color);
 }
 
 
@@ -88,9 +87,7 @@ section{
      color: #a77252;       
  }
  
- section{
-     color:var(--main-color) ;
- }
+
 
  p{
      color:var(--main-color);
@@ -101,9 +98,12 @@ section{
      justify-content: center;
      color: var(--main-color);
  }
+
+
  body{
+     padding: 0px;
+     margin: 0px;
      background-color: #8cb191;
-     padding : 0;
      text-align : center;
      background-color: #8cb191;
  }
@@ -123,7 +123,7 @@ section{
 /**Tableau indiquant le jour ainsi que l'adresse du food truck */
 
 
-table {
+table{
     border-collapse: collapse; /* Les bordures du tableau seront collées */
     display:flex;
     flex-direction: column;
@@ -132,13 +132,12 @@ table {
     caption-side: top;
 }
 
-td, th {
+td, th{
     border: 1px solid black;
     width : clamp(60px, 10vw, 100px);
 }
 
 /**logo des réseaux du truck*/
-
 
 
  .patisseries{
@@ -147,17 +146,21 @@ td, th {
     grid-template-rows: repeat(12,100px);
     gap: 10px;
  }
+
+
 .patisserie{
     height: 100px;
     width: 100px;
-    
 }
+
+
 footer{
     display: flex;
     
 }
 
- .facebook , .insta{
+
+.facebook , .insta{
      
     display: flex;
     height: 60px;

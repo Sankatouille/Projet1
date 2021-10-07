@@ -13,27 +13,32 @@
     --lighty: #fff;
  }
 
+ * {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+   
+ }
+ header {
+     display: flex;
+     width: 100%;
+     height: 120px;
+
+
 
      
-header{
-    display: flex;
-    width: 100%;
-    height: 100px;
-}
 
 
-.imglogo{
-    margin: left 20px; 
-    color: #a77252;
-    width: 100px;
-    height: 100px;
- }
+
+
 
 
  .titre{
      display: flex;
      color: #fde035;
-    font-size:clamp(20px, 12vw, 200px);
+
+    font-size: clamp(20px, 6vw, 100px);
+
     text-align: center;
     font-style:italic;
     
@@ -161,11 +166,16 @@ table{
     justify-content: center;
     align-items: center;
     caption-side: top;
+    background-color: DDD;
+
 }
 
-td, th{
-    border: 1px solid black;
+
+td, th {
+    border: 2px solid black;
+
     width : clamp(60px, 10vw, 100px);
+    background-color: #DDD;
 }
 
 /**logo des réseaux du truck*/

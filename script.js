@@ -1,5 +1,5 @@
 const message=
-"Thank you for submitting your order.Your favorite Food Truck will prepare that!"
+"Thank you for submitting your request.Your favorite Food Truck will answer you!"
 
 document
 .getElementById("Formulaire")

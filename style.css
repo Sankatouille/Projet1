@@ -107,7 +107,7 @@ h4 {
  .marcPicture {
      width : 300px;
  }
-
+ 
  h3{
      display:flex;
      justify-content: center;
@@ -141,7 +141,6 @@ td, th {
 }
 
 /**logo des réseaux du truck*/
-
 
  .patisseries{
     display: grid;

@@ -1,149 +1,111 @@
-* {
-    box-sizing: border-box;
-    padding:0;
-    margin: 0;
-}
-
-
-
 :root {
     --main-color:#1a2b44;
     --secondary-color:#a77252;
     --darky: black;
-    --lighty: #fff;
+    --lighty: #ddd;
  }
 
-
+ * {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+   
+ }
  header {
      display: flex;
      width: 100%;
-     height: 120px;
-
-
-
-     
-
-
-
-
+     height: 105px;
+     border: bottom 1px solid #a77252;
+ }
 
 
  .titre{
      display: flex;
-     color: #fde035;
-
+     color:#a77252;
     font-size: clamp(20px, 6vw, 100px);
-
     text-align: center;
-    font-style:italic;
     
-
  }
 
- /*CSS par défault*/
 
- nav{ 
+nav{ 
     position: fixed;
     list-style-type: none;
-     width: 100%;
-     height: 100px;
+    width: 100%;
+    height: 100px;
     background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between; 
-
     color :lighty; 
-}   
-
-
     
-.imglogo{
+}   
+    
+.imlogo{
     margin: left 20px; 
     color: #a77252;
     width: 100px;
     height: 100px;
  }
    
-
-   
 ul{
-
     list-style-type: none;
     display: flex;
     gap : 10px;
     flex-direction: column;
-    }
     
     
-
+} 
 li{
-
-    font-size:clamp( 3px, 4px, 7px);
+    font-size: clamp( 3px, 4px, 7px);
 }
 
-
-
-a{
+a {
     color :var(--lighty);
     text-decoration: none;
     font-size: 20px;
 
 }
 
-
-header {
-    display: flex;
-    width: 100%;
-    height: 100px;
-
 section{
-    color:#1a2b44;
-    color:var(--main-color);
-
+    color:#1a2b44 ;
 }
+
+
  
  h1{ 
      text-align: center;
      color: #a77252;       
  }
  
-
+ section{
+     color:var(--main-color) ;
+ }
 
  p{
      color:var(--main-color);
  }
  
+ .imgfoodtruck {
+     width : 320px;
+ }
+
  h3{
      display:flex;
      justify-content: center;
      color: var(--main-color);
  }
-
-
  body{
-     padding: 0px;
-     margin: 0px;
-     background-color: #ddd;
+     background-color: #8cb191;
+     padding : 0;
      text-align : center;
-    
+     background-color: #8cb191;
  }
-
-
- .contactform{
-    border : inset 1px --darky;
-    background-color :var(--main-color);
-    color :var(--lighty);
-    display: flex;
-    width: 40%;
-    text-align : right;
-    padding-right : 5px;
- }
-
 
 /**Tableau indiquant le jour ainsi que l'adresse du food truck */
 
 
-table{
+table {
     border-collapse: collapse; /* Les bordures du tableau seront collées */
     display:flex;
     flex-direction: column;
@@ -154,10 +116,8 @@ table{
 
 }
 
-
 td, th {
     border: 2px solid black;
-
     width : clamp(60px, 10vw, 100px);
     background-color: #DDD;
 }
@@ -165,45 +125,50 @@ td, th {
 /**logo des réseaux du truck*/
 
 
-
- .patisseries{
-
+.patisseries{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12,100px);
-    gap: 10px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6,150px);
+    border-left: 1px solid black;
  }
-
-
 .patisserie{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 180px;
+    gap:10px;
+    margin-bottom:10px ;
+
+}
+.def{
+    display:-ms-inline-grid;
+    height: auto;
+    width:auto;
+    border: 1px solid black;
 }
 
+h2{color:#a77252;
+    font: 10px;
+}
 
 footer{
-    display: flex;
 
-    align-items: center;
-
+    border-top:1px solid #a77252;
+  
+    background-color: #1a2b44;
+    height: 105px;
+    
 }
-
-
-.facebook , .insta{
+ i{
      
-    display: flex;
-    height: 60px;
-    width: 60px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    color:#a77252;
+    font-size: 20px;
+
+
  }
-
-
-
-.Endpage{
-    list-style-type:none;
-	padding:0px;
-	display:table;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	margin-left: auto;
+ @media only screen (max-width: 600px){
+     .titre{
+         color: black;
+     }
  }

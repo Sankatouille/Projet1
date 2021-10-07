@@ -20,7 +20,7 @@
 
  .titre{
      display: flex;
-     color: #fde035;
+     color: #a77252;
     font-size: clamp(20px, 6vw, 100px);
     text-align: center;
     
@@ -186,7 +186,7 @@ footer{
  @media  screen and (min-width: 600px){
     
      .titre{
-         color: violet;
+         color: #a77252;
         
         }
         h1{ 

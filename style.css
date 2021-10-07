@@ -3,7 +3,7 @@
     --main-color:#1a2b44;
     --secondary-color:#a77252;
     --darky: black;
-    --lighty: #fff;
+    --lighty: #ddd;
  }
  * {
     box-sizing: border-box;
@@ -74,7 +74,10 @@ section{
  
  h1{ 
      text-align: center;
-     color: #a77252;       
+     color: #a77252; 
+     background-color: #fde035;  
+     border-radius: 50px;    
+    
  }
  
  section{
@@ -142,25 +145,78 @@ td, th {
 
 /**logo des réseaux du truck*/
 
+
  .patisseries{
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12,100px);
-    gap: 10px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(12,150px);
+    border-left: 1px solid black;
  }
 
 .patisserie{
-    height: 100px;
-    width: 100px;
-    
+
+    height: 150px;
+    width: 180px;
+    gap:10px;
+    margin-bottom:10px ;
+
 }
+.def{
+    display:-ms-inline-grid;
+    height: auto;
+    width:auto;
+    border: 1px solid black;
+    padding: 25px;
+}
+
 footer{
-    display: flex;
+    display: flex-box;
+    border-top:1px solid black ;
+    align-items: center;
+
 }
 
  .facebook , .insta{
      
-    display: flex;
+    display: inline-flex;
     height: 60px;
     width: 60px;
+ }
+ @media  screen and (min-width: 600px){
+    
+     .titre{
+         color: violet;
+        
+        }
+        h1{ 
+            text-align: center;
+            color: var(--main-color);
+            background-color:var(--secondary-color) ;
+            border:5px solid #1a2b44; 
+            border-radius: 10px;
+        }
+     .patisseries{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(6,564px);
+        border-left: 1px solid black;
+     }
+     .def{
+        display:-ms-inline-grid;
+        height: auto;
+        width:auto;
+        border: 3px solid #a77252;
+        padding: 130px;
+        font-size: 3.5vh;
+    }
+    .patisserie{
+        height: 564px;
+        width: 564px;
+        gap:10px;
+        margin-bottom:10px ;
+        
+    
+    }
+
  }

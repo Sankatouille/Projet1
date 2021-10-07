@@ -13,12 +13,7 @@
     --lighty: #fff;
  }
 
- * {
-    box-sizing: border-box;
-    padding:0;
-    margin: 0;
-   
- }
+
  header {
      display: flex;
      width: 100%;
@@ -60,13 +55,7 @@
     color :lighty; 
 }   
 
- .titre{
-     display: flex;
-     color:  #8cb191;
-    font-size: clamp(20px, 6vw, 100px);
-    text-align: center;
-    /*changement des tailles font size pour un site first mobile*/
- }
+
     
 .imglogo{
     margin: left 20px; 
@@ -75,11 +64,6 @@
     height: 100px;
  }
    
-ul{
-    box-sizing: border-box;
-
-  
-}   
 
    
 ul{
@@ -212,11 +196,7 @@ footer{
     width: 60px;
  }
 
- .link{
-     display:flex;
 
-
- }
 
 .Endpage{
     list-style-type:none;

@@ -13,6 +13,7 @@
     --lighty: #fff;
  }
 
+
      
 header{
     display: flex;
@@ -36,6 +37,7 @@ header{
     text-align: center;
     font-style:italic;
     
+
  }
 
  /*CSS par défault*/
@@ -43,18 +45,40 @@ header{
  nav{ 
     position: fixed;
     list-style-type: none;
-   /* width: 100%;
-     height: 100px;*/
+     width: 100%;
+     height: 100px;
     background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    color:lighty;
+
+    color :lighty; 
+}   
+
+ .titre{
+     display: flex;
+     color:  #8cb191;
+    font-size: clamp(20px, 6vw, 100px);
+    text-align: center;
+    /*changement des tailles font size pour un site first mobile*/
+ }
+    
+.imglogo{
+    margin: left 20px; 
+    color: #a77252;
+    width: 100px;
+    height: 100px;
+ }
+   
+ul{
+    box-sizing: border-box;
+
   
 }   
 
    
 ul{
+
     list-style-type: none;
     display: flex;
     gap : 10px;
@@ -62,7 +86,9 @@ ul{
     }
     
     
+
 li{
+
     font-size:clamp( 3px, 4px, 7px);
 }
 
@@ -75,9 +101,16 @@ a{
 
 }
 
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+
 section{
     color:#1a2b44;
     color:var(--main-color);
+
 }
  
  h1{ 
@@ -101,9 +134,9 @@ section{
  body{
      padding: 0px;
      margin: 0px;
-     background-color: #8cb191;
+     background-color: #ddd;
      text-align : center;
-     background-color: #8cb191;
+    
  }
 
 
@@ -138,7 +171,9 @@ td, th{
 /**logo des réseaux du truck*/
 
 
+
  .patisseries{
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12,100px);
@@ -154,7 +189,9 @@ td, th{
 
 footer{
     display: flex;
-    
+
+    align-items: center;
+
 }
 
 

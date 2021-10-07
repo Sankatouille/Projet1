@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+
+
 :root {
     --main-color:#1a2b44;
     --secondary-color:#a77252;
@@ -5,7 +13,6 @@
     --lighty: #fff;
  }
 
-<<<<<<< HEAD
      
 header{
     display: flex;
@@ -22,13 +29,6 @@ header{
  }
 
 
-* {
-    box-sizing: border-box;
-    padding:0;
-    margin: 0;
-   }
-
-
  .titre{
      display: flex;
      color: #fde035;
@@ -36,13 +36,6 @@ header{
     text-align: center;
     font-style:italic;
     
-=======
- * {
-    box-sizing: border-box;
-    padding:0;
-    margin: 0;
-   
->>>>>>> e004451dc5cbd7b50073214b162aa703f5c8b4b3
  }
 
  /*CSS par défault*/
@@ -56,35 +49,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between; 
-<<<<<<< HEAD
     color:lighty;
   
 }   
 
    
-nav > ul{
-=======
-    color :lighty; 
-}   
-
- .titre{
-     display: flex;
-     color: #fde035;
-    font-size: clamp(20px, 6vw, 100px);
-    text-align: center;
-    /*changement des tailles font size pour un site first mobile*/
- }
-    
-.imglogo{
-    margin: left 20px; 
-    color: #a77252;
-    width: 100px;
-    height: 100px;
- }
-   
 ul{
-    box-sizing: border-box;
->>>>>>> e004451dc5cbd7b50073214b162aa703f5c8b4b3
     list-style-type: none;
     display: flex;
     gap : 10px;
@@ -92,7 +62,7 @@ ul{
     }
     
     
-nav li{
+li{
     font-size:clamp( 3px, 4px, 7px);
 }
 
@@ -105,16 +75,9 @@ a{
 
 }
 
-<<<<<<< HEAD
 section{
     color:#1a2b44;
     color:var(--main-color);
-=======
-header {
-    display: flex;
-    width: 100%;
-    height: 100px;
->>>>>>> e004451dc5cbd7b50073214b162aa703f5c8b4b3
 }
  
  h1{ 
@@ -175,12 +138,7 @@ td, th{
 /**logo des réseaux du truck*/
 
 
-<<<<<<< HEAD
  .patisseries{
-=======
-
-.patisseries{
->>>>>>> e004451dc5cbd7b50073214b162aa703f5c8b4b3
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12,100px);
@@ -196,11 +154,7 @@ td, th{
 
 footer{
     display: flex;
-<<<<<<< HEAD
     
-=======
-    align-items: center;
->>>>>>> e004451dc5cbd7b50073214b162aa703f5c8b4b3
 }
 
 

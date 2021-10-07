@@ -55,6 +55,7 @@ ul{
     
     
 } 
+
 li{
     font-size: clamp( 3px, 4px, 7px);
 }
@@ -69,8 +70,6 @@ a {
 section{
     color:#1a2b44 ;
 }
-
-
 
  
  h1{ 
@@ -87,9 +86,28 @@ section{
  }
  
  .imgfoodtruck {
-     width : 320px;
+     width : 400px;
  }
 
+h4 {
+    color : #a77252;
+}
+
+ #presentationText {
+    display:-ms-inline-grid;
+    height: auto;
+    width:auto;
+    border: 2px solid black;
+    margin : 5px;
+    border-radius: 10px;
+    background-color: #DDD;
+    box-shadow: 1px 1px 1px black inset;
+ }
+
+ .marcPicture {
+     width : 300px;
+ }
+ 
  h3{
      display:flex;
      justify-content: center;
@@ -124,16 +142,13 @@ td, th {
 
 /**logo des réseaux du truck*/
 
-p {
-    text
-}
-
  .patisseries{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12,100px);
     gap: 10px;
  }
+
 .patisserie{
     height: 100px;
     width: 100px;
@@ -141,12 +156,8 @@ p {
 }
 footer{
     display: flex;
-    
-
-
-
-
 }
+
  .facebook , .insta{
      
     display: flex;

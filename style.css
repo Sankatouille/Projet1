@@ -94,7 +94,7 @@ section{
     width:100%;
 }
  
- h1{ 
+ h1,h2,h3,h4{ 
      text-align: center;
      color: var(--secondary-color); 
      background-color: var(--main-color);  
@@ -115,11 +115,6 @@ section{
  .imgfoodtruck {
      width : 400px;
  }
-
-h4 {
-    color : var(--darky);
-    font-size: 20px;
-}
 
  #presentationText {
     display:-ms-inline-grid;
@@ -206,6 +201,17 @@ footer{
     width: 60px;
  }
 
+ .links{
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    grid-template-rows: 20px 20px;
+    color:var(--main-color);
+}
+
+.link{
+    font-size:12pt;
+}
+
  
  @media  screen and (min-width: 600px){
     .patisseries{
@@ -225,7 +231,7 @@ footer{
         
     }
     
-    h1{ 
+    h1,h2,h3,h4{ 
         text-align: center;
         color: var(--main-color);
         background-color:var(--secondary-color) ;
@@ -238,7 +244,7 @@ footer{
 
     .def{
         display:grid;
-
+        gap:0px;
         height: auto;
         border: 3px solid --darky;
         background-color: #8cb191;
@@ -266,4 +272,18 @@ footer{
         text-align : end;
     }
 
+    
+    .links{
+        display: grid;
+        grid-template-columns:repeat(4, 25%);
+        grid-template-rows: 20px 20px;
+    }
+    
+    .link{
+        font-size:20pt;
+
+    }
+    
+    
+}
  }

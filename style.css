@@ -5,12 +5,13 @@
     --darky: black;
     --lighty: #ddd;
  }
+
  * {
     box-sizing: border-box;
     padding:0;
     margin: 0;
-   
  }
+
  header {
      display: flex;
      width: 100%;
@@ -53,11 +54,26 @@ ul{
     gap : 10px;
     flex-direction: column;
     
-    
 } 
 
 li{
     font-size: clamp( 3px, 4px, 7px);
+    color : var(--secondary-color)
+}
+
+.menu {
+    gap : 0px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.menus {
+    border : 2px solid white;
+    
+}
+
+.menusName {
+    color : #fde035;
 }
 
 a {
@@ -141,18 +157,19 @@ td, th {
     border: 2px solid black;
     width : clamp(60px, 10vw, 100px);
     background-color: #DDD;
+    font-size: 14px;
 }
 
 /**logo des réseaux du truck*/
 
 
- .patisseries{
+.patisseries{
 
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(12,150px);
     border-left: 1px solid black;
- }
+}
 
 .patisserie{
 
@@ -177,32 +194,39 @@ footer{
 
 }
 
- .facebook , .insta{
+.facebook , .insta{
      
     display: inline-flex;
     height: 60px;
     width: 60px;
  }
+
  @media  screen and (min-width: 600px){
     
+
      .titre{
          color: #a77252;
+
         
-        }
-        h1{ 
-            text-align: center;
-            color: var(--main-color);
-            background-color:var(--secondary-color) ;
-            border:5px solid #1a2b44; 
-            border-radius: 10px;
-        }
-     .patisseries{
+    }
+    
+    h1{ 
+        text-align: center;
+        color: var(--main-color);
+        background-color:var(--secondary-color) ;
+        border:5px solid #1a2b44; 
+        border-radius: 10px;
+    }
+
+    
+    .patisseries{
         display: grid;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(6,564px);
         border-left: 1px solid black;
-     }
-     .def{
+    }
+
+    .def{
         display:-ms-inline-grid;
         height: auto;
         width:auto;
@@ -219,4 +243,18 @@ footer{
     
     }
 
+    
+    .menu{
+        list-style-type: none;
+        display: flex;
+        gap : clamp(10px, 12px, 20px);
+        flex-direction: row;
+        margin-right: 5px;
+    } 
+    
+    .menus{
+        font-size: clamp( 3px, 4px, 20px);   
+        color : var(--secondary-color);
+        text-align : end;
+    }
  }

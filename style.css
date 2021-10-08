@@ -17,6 +17,7 @@
      width: 100%;
      height: 100px;
      
+     
  }
 
 
@@ -39,6 +40,7 @@ nav{
     align-items: center;
     justify-content: space-between; 
     color :lighty; 
+    border-bottom:1px solid #a77252;
     
 }   
     
@@ -90,8 +92,10 @@ section{
     color:#1a2b44 ;
 }
 
-.imgfoodtruck{
-    width:100%;
+
+
+.imgfoodtruck {
+    width : clamp(400px, 500px, 700px);
 }
  
  h1,h2,h3,h4{ 
@@ -111,10 +115,9 @@ section{
  p{
      color:var(--main-color);
  }
- 
- .imgfoodtruck {
-     width : 400px;
- }
+
+
+
 
  #presentationText {
     display:-ms-inline-grid;
@@ -188,17 +191,40 @@ td, th {
 
 footer{
     display: flex-box;
-    border-top:1px solid black ;
+    border-top:1px solid #a77252;
     align-items: center;
-    height: 100px;
+    background-color: #1a2b44;
+}
+
+
+
+.link{
+    background-color: #1a2b44;
 
 }
+
+
+.links{
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    grid-template-rows: 20px 20px;}
+
+
+.text-center{
+    color: white;
+}
+
+label {
+    color : white;
+}
+
 
 .facebook , .insta{
      
     display: inline-flex;
     height: 60px;
     width: 60px;
+    
  }
 
  .links{
@@ -212,6 +238,26 @@ footer{
     font-size:12pt;
 }
 
+ input[type="text"], input[type="email"]{
+    margin : 5px;
+    width : 400px;
+}
+
+textarea {
+    width : 400px;
+    height: 150px;
+}
+
+input[type="submit"] {
+    width : 50px;
+    background: #283b63;
+    color: white;
+}
+
+.coordonées {
+    color:white;
+}
+
  
  @media  screen and (min-width: 600px){
     .patisseries{
@@ -221,15 +267,37 @@ footer{
         border-left: 3px solid --darky;
     }
 
+    input[type="text"], input[type="email"]{
+        margin : 5px;
+        width : 600px;
+    }
 
+    textarea {
+        width : 600px;
+        height: 150px;
+    }
+
+    input[type="submit"] {
+        width : 100px;
+        background: #283b63;
+        color: white;
+    }
  
     
 
      .titre{
          color: #a77252;
+     }
 
         
-    }
+
+     .patisseries{
+        display: grid;
+        grid-template-columns: repeat(4,calc(100%/4));
+        grid-template-rows: repeat(6,564px);
+        border-left: 1px solid black;
+     }
+
     
     h1,h2,h3,h4{ 
         text-align: center;
@@ -244,7 +312,6 @@ footer{
 
     .def{
         display:grid;
-        gap:0px;
         height: auto;
         border: 3px solid --darky;
         background-color: #8cb191;
@@ -286,4 +353,3 @@ footer{
     
     
 }
- }

@@ -226,6 +226,14 @@ footer{
          color: #a77252;
 
         
+
+     .patisseries{
+        display: grid;
+        grid-template-columns: repeat(4,calc(100%/4));
+        grid-template-rows: repeat(6,564px);
+        border-left: 1px solid black;
+     }
+
     }
     
     h1{ 
@@ -241,6 +249,7 @@ footer{
 
     .def{
         display:grid;
+
 
         height: auto;
         border: 3px solid --darky;

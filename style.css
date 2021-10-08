@@ -14,15 +14,18 @@
  header {
      display: flex;
      width: 100%;
-     height: 120px;
+     height: 100px;
+     
  }
 
 
  .titre{
      display: flex;
-     color: #a77252;
-    font-size: clamp(20px, 6vw, 100px);
+     color: yellow;
+    font-size: clamp(2px, 6vw, 100px);
     text-align: center;
+    border: 4px solid var(--lighty);
+    border-style: ridge;
     
  }
 
@@ -50,14 +53,15 @@ nav{
 ul{
     list-style-type: none;
     display: flex;
-    gap : 10px;
+    gap : 5px;
     flex-direction: column;
     
     
 } 
 
 li{
-    font-size: clamp( 3px, 4px, 7px);
+    font-size: clamp( 2px, 5px, 7px);
+    text-decoration: underline;
 }
 
 a {
@@ -71,12 +75,17 @@ section{
     color:#1a2b44 ;
 }
 
+.imgfoodtruck{
+    width:100%;
+}
  
  h1{ 
      text-align: center;
-     color: #a77252; 
-     background-color: #fde035;  
-     border-radius: 50px;    
+     color: #fde035; 
+     background-color: var(--main-color);  
+     border-radius: 50px; 
+     font-size:medium;   
+     border:2px solid var(--lighty); 
     
  }
  
@@ -93,7 +102,8 @@ section{
  }
 
 h4 {
-    color : #a77252;
+    color : var(--darky);
+    font-size: 20px;
 }
 
  #presentationText {
@@ -111,16 +121,10 @@ h4 {
      width : 300px;
  }
  
- h3{
-     display:flex;
-     justify-content: center;
-     color: var(--main-color);
- }
  body{
-     background-color: #8cb191;
      padding : 0;
      text-align : center;
-     background-color: #8cb191;
+     background-color: var(--secondary-color);
  }
 
 /**Tableau indiquant le jour ainsi que l'adresse du food truck */
@@ -159,7 +163,8 @@ td, th {
     height: 150px;
     width: 180px;
     gap:10px;
-    margin-bottom:10px ;
+    margin-bottom:10px;
+    border:3px solid red right ;
 
 }
 .def{
@@ -168,12 +173,14 @@ td, th {
     width:auto;
     border: 1px solid black;
     padding: 25px;
+    background-color: var(--secondary-color);
 }
 
 footer{
     display: flex-box;
     border-top:1px solid black ;
     align-items: center;
+    height: 100px;
 
 }
 
@@ -183,40 +190,23 @@ footer{
     height: 60px;
     width: 60px;
  }
+ 
  @media  screen and (min-width: 600px){
-    
-     .titre{
-         color: #a77252;
-        
-        }
-        h1{ 
-            text-align: center;
-            color: var(--main-color);
-            background-color:var(--secondary-color) ;
-            border:5px solid #1a2b44; 
-            border-radius: 10px;
-        }
-     .patisseries{
+    .patisseries{
         display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(6,564px);
-        border-left: 1px solid black;
-     }
+        grid-template-columns:30% 20% 30% 20%;
+        grid-template-rows: repeat(6,200px);
+        border-left: 1px solid --darky;
+    }
      .def{
-        display:-ms-inline-grid;
+        display:grid;
         height: auto;
-        width:auto;
-        border: 3px solid #a77252;
-        padding: 130px;
-        font-size: 3.5vh;
+        border: 3px solid --darky;
     }
     .patisserie{
-        height: 564px;
-        width: 564px;
+        height: 200px;
+        width: 100%;
         gap:10px;
         margin-bottom:10px ;
-        
-    
     }
-
  }

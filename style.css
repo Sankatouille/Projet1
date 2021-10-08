@@ -198,7 +198,7 @@ footer{
         }
      .patisseries{
         display: grid;
-        grid-template-columns: repeat(4, 25%);
+        grid-template-columns: repeat(4,calc(100%/4));
         grid-template-rows: repeat(6,564px);
         border-left: 1px solid black;
      }
